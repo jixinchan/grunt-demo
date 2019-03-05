@@ -1,0 +1,25 @@
+@yellow:yellow;
+
+
+a{
+  background-color:@yellow;
+}
+
+blockquote{
+  color:gray;
+}
+
+.box(@width,@height,@background){
+  width:@width;
+  height:@height;
+  border:1px solod;
+  background-color:@background
+}
+
+.small{
+  .box(100px,50px,green);
+}
+
+.large{
+  .box(300px,200px,red);
+}
