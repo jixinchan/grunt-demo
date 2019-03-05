@@ -1,7 +1,6 @@
-                                             
-rts = function(grunt) {
-  =  grunt.initConfig({
-    eslint: {
+module.exports = function(grunt) {
+  grunt.initConfig({
+    csslint: {
       options: {
           csslintrc: '.csslintrc'
           
@@ -14,6 +13,6 @@ rts = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-csslint');
 
-      grunt.registerTask('lint', ['csslint']);
+      grunt.registerTask('default', ['csslint']);
 
 };
