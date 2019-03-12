@@ -18,6 +18,8 @@
   "homepage": "https://github.com/jixinchan/grunt-demo#readme",
   "devDependencies": {
     "grunt": "^1.0.3",
-    "grunt-contrib-concat": "^1.0.1"
-  }
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-spritesmith": "^6.6.3"
+  },
+  "dependencies": {}
 }
