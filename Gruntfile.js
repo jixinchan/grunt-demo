@@ -1,7 +1,17 @@
 module.exports = function (grunt) {
   grunt.initConfig({
     cssmin: {
-      'rectangle.min.css':['./ractangle.css'] 
+      target: {
+        files: [{
+          expand: true,
+          cwd: './',
+          src: ['*.css', '!*.min.css'],
+          dest: 'dist/',
+          ext: '.min.css'
+        
+        }]
+                 
+      }
     }
              
   });
