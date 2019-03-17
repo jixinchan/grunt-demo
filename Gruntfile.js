@@ -6,20 +6,19 @@ module.exports = function (grunt) {
         bail:true
       },
       all:['test/*.js']
-    }
+    },
     run:{
-      apiServer:{
+      api:{
         options:{
-        wait:false
-      },
-      args:['./app.js']
+          wait:false
+        },
+        args:['./app.js']
       } 
-    }
-             
+    }       
   });
 
   grunt.loadNpmTasks('grunt-run');
   grunt.loadNpmTasks('grunt-mocha-cli');
-  grunt.registerTask('default', ['run','mochacli']);
+  grunt.registerTask('default', ['run','mochacli','stop:api']);
 };
 
